@@ -7,13 +7,17 @@ title: Projects
 
 I was first introduced to machine learning (ML) through my first lab experience, where my colleagues were using ML algorithms to detect epilepsy. Since then, my curiosity for the subject has led me to complete several MOOCs on the subject, and begin participating in Kaggle competitions.
 
-## Kaggle Competition 1
+## Cassava Leaf Disease Competition
+
+Currently, I am competing in the Cassava Leaf Disease Competition. The task outlined involves the classification of Casava images into four diseases categories or a fifth healthy plant category. Due to the computationally expensive nature of this task and the limited dataset, tensor processing units (TPUs) and transfer learning were used. My Notebooks containing the associated code can be accessed with the following link.
 
 # ___ sensor validation
 
-I am currently working with __ to validate Sensor Technology
+I am currently working with __ to validate sensor technology
 
 # hand
+
+I have taken it on myself to design and build a mechanical hand that is able to replicate hand gestures. Currently, I have completed the majority of the mechanical design, and am now working with a friend to forge my vision into a reality.
 
 # Advanced AERO McGill Design Team
 
