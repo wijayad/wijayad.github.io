@@ -9,7 +9,7 @@ I was first introduced to machine learning (ML) through my first lab experience,
 
 ## Cassava Leaf Disease Competition
 
-Currently, I am competing in the Cassava Leaf Disease Competition. The task outlined involves the classification of Casava images into four diseases categories or a fifth healthy plant category. Due to the computationally expensive nature of this task and the limited dataset, tensor processing units (TPUs) and transfer learning were used. My Notebooks containing the associated code can be accessed with the following link.
+Currently, I am competing in the Cassava Leaf Disease Competition. The task outlined involves the classification of Casava images into four diseases categories or a fifth healthy plant category. Due to the computationally expensive nature of this task and the limited dataset, tensor processing units (TPUs) and transfer learning were used. My Notebooks containing the associated code can be accessed <a href="https://www.kaggle.com/danielwijaya/cassava-v1">here</a>.
 
 # ___ sensor validation
 
@@ -34,7 +34,7 @@ Following that, I served as the co-captain of the team, guiding design and const
 
 OPMs are a new brain imaging technology that is able to measure magnetic brain activity without the requirement of cryogenic cooling. This permits sensors to be placed very close to the patient, improving signal-to-noise ratio. I was involved with this project for two years.
 
-In the first year and part of the second year, I developed an experimental setup to compare these OPM sensors directly to the 275 sensor CTF superconducting quantum interference devices (SQUID) based MEG system used at ImageTech. This involved coding a script to generate a sensor array that exactly mimicks the SQUID system. Testing was done using a magnetic dipole, and results showed similar positioning accuracy to the SQUID system. I had the opportunity to participate at OHBM 2018 - my poster can be accessed  <a href="/files/OHBM_2018_Daniel_Wijaya.pdf">here</a>.
+In the first year and part of the second year, I developed an experimental setup to compare these OPM sensors directly to the 275 sensor CTF superconducting quantum interference devices (SQUID) based MEG system used at ImageTech. This involved coding a script to generate a sensor array that exactly mimicks the SQUID system. Testing was done using a magnetic dipole, and results showed similar positioning accuracy to the SQUID system. I had the opportunity to participate at OHBM 2018 - my poster can be accessed <a href="/files/OHBM_2018_Daniel_Wijaya.pdf">here</a>.
 
 <center><img src="/files/OPM_compare.png" alt="title" width = "500"/></center>
 
