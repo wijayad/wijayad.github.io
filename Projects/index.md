@@ -31,7 +31,8 @@ Following that, I served as the co-captain of the team, guiding design and const
 
 OPMs are a new brain imaging technology that is able to measure magnetic brain activity without the requirement of cryogenic cooling. This permits sensors to be placed very close to the patient, improving signal-to-noise ratio. I was involved with this project for two years.
 
-In the first year, I developed an experimental setup to compare these OPM sensors directly to the 275 sensor CTF superconducting quantum interference devices (SQUID) based MEG system used at ImageTech. This involved coding a script to generate a sensor array that exactly mimicks the SQUID system. Testing was done using a magnetic dipole, and results showed similar positioning accuracy to the SQUID system.
+In the first year and part of the second year, I developed an experimental setup to compare these OPM sensors directly to the 275 sensor CTF superconducting quantum interference devices (SQUID) based MEG system used at ImageTech. This involved coding a script to generate a sensor array that exactly mimicks the SQUID system. Testing was done using a magnetic dipole, and results showed similar positioning accuracy to the SQUID system. I had the opportunity to present this poster at OHBM 2017 - my poster can be accessed via the following link.
+
 
 In my second year working in the lab, I wrote a script to automatically generate a customized OPM array for patients - this increases signal-to-noise ratio. The workflow I designed first took as input either polhemous scan data or scalp segmentation, that output geometric data that then went through my SolidWorks VBA script to generate the sensor array. Additionally, I explored the possibility of using coils to provide active magnetic shielding.
 
