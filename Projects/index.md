@@ -43,3 +43,5 @@ Shortcomings in data collection can be mitigated by co-registering data from dif
 # CTF Magnetoencephalography (MEG) Head Stabilization
 
 In order to better secure young patients who may have a history of seizure, a headrest component needed to be designed for the CTF MEG. I designed this head stabilization device, creating the CAD and running FEA simulations. This design was printed by the U of T lab affiliated with Sick Kids.
+
+<center><img src="/files/head_stabilzer.png" alt="title" width = "500"/></center>
