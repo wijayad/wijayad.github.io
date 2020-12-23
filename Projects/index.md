@@ -24,7 +24,7 @@ I have taken it on myself to design and build a mechanical hand with the same de
 We participated in the SAE Aero Design competition. I was a part of the Advanced team over several years, fulfilling the roles of as a sub-team leader, VP logistics, and co-captain over these years.
 
 In my first two years, I was the fuselage sub-team lead and led the designing and manufacture the fuselage of the aircraft.
-<center><img src="/files/AERO1.png" alt="title" width = "1000"/></center>
+<center><img src="/files/AERO1.png" alt="title" width = "750"/></center>
 
 My second year design focused heavily on the concept of modularity to ensure easy manufacture and assembly of the aircraft.
 <center><img src="/files/AERO2.png" alt="title" width = "750"/></center>
@@ -42,7 +42,7 @@ In the first year and part of the second year, I developed an experimental setup
 
 In my second year working in the lab, I wrote a script to automatically generate a customized OPM array for patients - this increases signal-to-noise ratio. The workflow I designed first took as input either polhemous scan data or scalp segmentation, that output geometric data that then went through my SolidWorks VBA script to generate the sensor array. 
 
-<center><img src="/files/custom_array.png" alt="title" width = "750"/></center>
+<center><img src="/files/custom_array.png" alt="title" width = "600"/></center>
 
 Additionally, I explored the possibility of using coils to provide active magnetic shielding. In the image below, the rectangles show the position on the coils, while the differently collored point clouds show isomagnetic regions.
 
