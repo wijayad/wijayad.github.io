@@ -18,7 +18,7 @@ I am working with Professor John Welsh to validate a high channel-count probe th
 <center><img src="/files/neural_probe_1.png" alt="title" width = "750"/></center>
 A. Micrographs of NDT cerebellar probes. B. 4 probes (62 sites/probe) deliver 248 recording sites to mouse crus2a. C. Cross-correlation matrices of oversampled spikes (probes 2, 3) reveal 2 regions of correlated activity separated at a depth corresponding to the molecular/granular layer interface. D. Waveform separation in the molecular layer identifies Purkinje cell complex and simple spikes and granule cell spikes below. E. Location of spike types on the full array. (Wijaya, Cheung, Welsh)
 
-<center><img src="/files/molecular_granular_correlation.png" alt="title" width = "750"/></center>
+<center><img src="/files/molecular_granular_correlation.png" alt="title" width = "400"/></center>
 Weight matrix for the relationship between activations in the past 1 second in granular layer and a molecular layer cell.
 
 # Mechanical Hand
