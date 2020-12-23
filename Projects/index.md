@@ -15,9 +15,9 @@ Currently, I am competing in the Cassava Leaf Disease Competition. The task outl
 
 I am currently working with __ to validate sensor technology
 
-# hand
+# Mechanical Hand
 
-I have taken it on myself to design and build a mechanical hand that is able to replicate hand gestures. Currently, I have completed the majority of the mechanical design, and am now working with a friend to forge my vision into a reality.
+I have taken it on myself to design and build a mechanical hand with the same degrees of freedom as a human hand. Currently, I have completed the majority of the mechanical design, and am now working with a friend to forge my vision into a reality.
 
 # Advanced AERO McGill Design Team
 
