@@ -14,7 +14,9 @@ Currently, I am competing in the Cassava Leaf Disease Competition. The task outl
 # Probe validation 
 
 I am working with Professor John Welsh to validate a high channel-count probe that measures extracellular electrophysiology of the cerebellar cortex. The goal of the project is to use these probes to further our understanding of how biological neural networks function. We are currently working to validate the technology on nice - thus far, I have written scripts to pre-process the neural data, detect and sort neural spikes, determine spike correlation between sensors, and mapping relationships between the granular and molecular layers of the brain.
+
 <center><img src="/files/neural_probe_1.png" alt="title" width = "750"/></center>
+A. Micrographs of NDT cerebellar probes. B. 4 probes (62 sites/probe) deliver 248 recording sites to mouse crus2a. C. Cross-correlation matrices of oversampled spikes (probes 2, 3) reveal 2 regions of correlated activity separated at a depth corresponding to the molecular/granular layer interface. D. Waveform separation in the molecular layer identifies Purkinje cell complex and simple spikes and granule cell spikes below. E. Location of spike types on the full array. (Wijaya, Cheung, Welsh)
 
 # Mechanical Hand
 
