@@ -5,11 +5,23 @@ title: Projects
 
 # Kaggle
 
+I was first introduced to machine learning (ML) through my first lab experience, where my colleagues were using ML algorithms to detect epilepsy. Since then, my curiosity for the subject has led me to complete several MOOCs on the subject, and begin participating in Kaggle competitions.
+
+## Kaggle Competition 1
+
 # ___ sensor validation
+
+I am currently working with __ to validate Sensor Technology
 
 # hand
 
-# AERO
+# Advanced AERO McGill Design Team
+
+We participated in the SAE Aero Design competition. I was a part of the Advanced team over several years, fulfilling the roles of as a sub-team leader, VP logistics, and co-captain over these years.
+
+In my first two years, I was the fuselage sub-team lead and led the designing and manufacture the fuselage of the aircraft.
+
+Following that, I served as the co-captain of the team, guiding design and construction of the vehicle.
 
 # Optically Pumped Magnetometer (OPM) “Helmet” System
 
