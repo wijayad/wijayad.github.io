@@ -20,6 +20,10 @@ I am working with Professor John Welsh to validate a high channel-count probe th
 
 I have taken it on myself to design and build a mechanical hand with the same degrees of freedom as a human hand. Currently, I have completed the majority of the mechanical design, and am now working with a friend to forge my vision into a reality.
 
+<center><img src="/files/finger_1.png" alt="title" width = "750"/></center>
+
+<center><img src="/files/hand_1.png" alt="title" width = "750"/></center>
+
 # Advanced AERO McGill Design Team
 
 We participated in the SAE Aero Design competition. I was a part of the Advanced team over several years, fulfilling the roles of as a sub-team leader, VP logistics, and co-captain over these years.
