@@ -30,13 +30,13 @@ I have taken it on myself to design and build a mechanical hand with the same de
 
 We participated in the SAE Aero Design competition. I was a part of the Advanced team over several years, fulfilling the roles of as a sub-team leader, VP logistics, and co-captain over these years.
 
-In my first two years, I was the fuselage sub-team lead and led the designing and manufacture the fuselage of the aircraft.
+In my first two years, I was the fuselage sub-team lead and led the designing and manufacture the fuselage of the aircraft. Note that majority of aircraft was constructed by laser-cutting balsa and plywood.
 <center><img src="/files/AERO1.png" alt="title" width = "750"/></center>
 
 My second year design focused heavily on the concept of modularity to ensure easy manufacture and assembly of the aircraft.
 <center><img src="/files/AERO2.png" alt="title" width = "750"/></center>
 
-Following that, I served as the co-captain of the team, guiding design and construction of the vehicle.
+Following that, I served as the co-captain of the team, guiding design and construction of the vehicle, specifically focusing on the blended wing-body concept. We also investigated the possibility of using a foam construction (rather than balsa) to speed up construction.
 <center><img src="/files/AERO3.png" alt="title" width = "750"/></center>
 
 # Optically Pumped Magnetometer (OPM) “Helmet” System
