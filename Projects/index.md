@@ -23,9 +23,10 @@ I have taken it on myself to design and build a mechanical hand with the same de
 
 We participated in the SAE Aero Design competition. I was a part of the Advanced team over several years, fulfilling the roles of as a sub-team leader, VP logistics, and co-captain over these years.
 
-In my first two years, I was the fuselage sub-team lead and led the designing and manufacture the fuselage of the aircraft. The first year design and second year design are shown below.
+In my first two years, I was the fuselage sub-team lead and led the designing and manufacture the fuselage of the aircraft.
 <center><img src="/files/AERO1.png" alt="title" width = "1000"/></center>
 
+My second year design focused heavily on the concept of modularity to ensure easy manufacture and assembly of the aircraft.
 <center><img src="/files/AERO2.png" alt="title" width = "750"/></center>
 
 Following that, I served as the co-captain of the team, guiding design and construction of the vehicle.
