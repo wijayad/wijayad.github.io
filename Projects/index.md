@@ -24,8 +24,11 @@ I have taken it on myself to design and build a mechanical hand with the same de
 We participated in the SAE Aero Design competition. I was a part of the Advanced team over several years, fulfilling the roles of as a sub-team leader, VP logistics, and co-captain over these years.
 
 In my first two years, I was the fuselage sub-team lead and led the designing and manufacture the fuselage of the aircraft.
+<center><img src="/files/AERO1.png" alt="title" width = "500"/></center>
+<center><img src="/files/AERO2.png" alt="title" width = "500"/></center>
 
 Following that, I served as the co-captain of the team, guiding design and construction of the vehicle.
+<center><img src="/files/AERO3.png" alt="title" width = "500"/></center>
 
 # Optically Pumped Magnetometer (OPM) “Helmet” System
 
