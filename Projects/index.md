@@ -33,15 +33,23 @@ OPMs are a new brain imaging technology that is able to measure magnetic brain a
 
 In the first year and part of the second year, I developed an experimental setup to compare these OPM sensors directly to the 275 sensor CTF superconducting quantum interference devices (SQUID) based MEG system used at ImageTech. This involved coding a script to generate a sensor array that exactly mimicks the SQUID system. Testing was done using a magnetic dipole, and results showed similar positioning accuracy to the SQUID system. I had the opportunity to present this poster at OHBM 2017 - my poster can be accessed via the following link.
 
+<center><img src="/files/OPM_compare.png" alt="title" width = "500"/></center>
 
-In my second year working in the lab, I wrote a script to automatically generate a customized OPM array for patients - this increases signal-to-noise ratio. The workflow I designed first took as input either polhemous scan data or scalp segmentation, that output geometric data that then went through my SolidWorks VBA script to generate the sensor array. Additionally, I explored the possibility of using coils to provide active magnetic shielding.
+In my second year working in the lab, I wrote a script to automatically generate a customized OPM array for patients - this increases signal-to-noise ratio. The workflow I designed first took as input either polhemous scan data or scalp segmentation, that output geometric data that then went through my SolidWorks VBA script to generate the sensor array. 
+
+<center><img src="/files/custom_array.png" alt="title" width = "500"/></center>
+
+Additionally, I explored the possibility of using coils to provide active magnetic shielding.
+
+<center><img src="/files/active_mag_shield.png" alt="title" width = "500"/></center>
 
 # Cervical Spine Coregistration 
 
 Shortcomings in data collection can be mitigated by co-registering data from different technologies. For this project, I was tasked with designing a sensor array that can be used to co-register Magnetoencephalography (MEG) Optically Pumped Magnetometer (OPM) which have high temporal resolution and low spatial resolution with MRI, which has high spatial resolution and low temporal accuracy. This project necessitated the development of a protocol for the co-registration of anatomical landmarks to MEG OPM data of the spinal column, to provide information on the relative position of the spinal column in relation to the sensors. As the spinal structure is very mobile, a system is required to predict or prevent changes between positions during or between MRI and MEG OPM scans. Several designs were proposed and built.
 
+<center><img src="/files/co_registration.png" alt="title" width = "500"/></center>
+
 # CTF Magnetoencephalography (MEG) Head Stabilization
 
 In order to better secure young patients who may have a history of seizure, a headrest component needed to be designed for the CTF MEG. I designed this head stabilization device, creating the CAD and running FEA simulations. This design was printed by the U of T lab affiliated with Sick Kids.
-
 <center><img src="/files/head_stabilzer.png" alt="title" width = "500"/></center>
