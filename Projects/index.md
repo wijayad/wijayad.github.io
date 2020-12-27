@@ -9,7 +9,7 @@ I was first introduced to machine learning (ML) through my first lab experience,
 
 **Cassava Leaf Disease Competition**
 
-Currently, I am competing in the Cassava Leaf Disease Competition. The task outlined involves the classification of Casava images into four diseases categories or a fifth healthy plant category. Due to the computationally expensive nature of this task and the limited dataset, tensor processing units (TPUs) and transfer learning were used. At the moment my algorithm has an accuracy of 89%, though I am hoping to impove this by ensembling and exploring differnet algorithms. My notebooks containing the associated code can be accessed <a href="https://www.kaggle.com/danielwijaya/cassava-v1">here</a>. 
+Currently, I am competing in the Cassava Leaf Disease Competition. The task outlined involves the classification of Casava images into four diseases categories or a fifth healthy plant category. Due to the computationally expensive nature of this task and the limited dataset, tensor processing units (TPUs) and transfer learning were used. At the moment my algorithm has an accuracy of 89.1% (the top accuracy on the leaderboard is 90.6%), though I am hoping to impove this by ensembling and exploring different algorithms. My notebooks containing the associated code can be accessed <a href="https://www.kaggle.com/danielwijaya/cassava-v1">here</a>. 
 
 # Probe validation 
 
