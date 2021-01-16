@@ -27,6 +27,8 @@ I have taken it on myself to design and build a mechanical hand with the same de
 
 <video src="/files/video-1609701668.mp4" width="320" height="200" controls preload></video>
 
+<video src="/files/video-1609961594.mp4" width="320" height="200" controls preload></video>
+
 <center><img src="/files/finger1.png" alt="title" width = "750"/></center>
 
 <center><img src="/files/hand1.png" alt="title" width = "750"/></center>
