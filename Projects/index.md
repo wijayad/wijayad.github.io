@@ -25,13 +25,13 @@ Weight matrix for the relationship between activations in the past 1 second in g
 
 I have taken it on myself to design and build a mechanical hand with the same degrees of freedom as a human hand. Currently, I have completed the majority of the mechanical design, and am now working with a friend to forge my vision into a reality.
 
-<video src="/files/video-1609701668.mp4" width="320" height="200" controls preload></video>
+<video src="/files/video-1609701668.mp4" width="200" height="400" controls preload></video>
 
-<video src="/files/video-1609961594.mp4" width="320" height="200" controls preload></video>
+<video src="/files/video-1609961594.mp4" width="200" height="400" controls preload></video>
 
 <center><img src="/files/finger1.png" alt="title" width = "750"/></center>
 
-<center><img src="/files/hand1.png" alt="title" width = "750"/></center>
+<center><img src="/files/hand2.png" alt="title" width = "750"/></center>
 
 # Advanced AERO McGill Design Team
 
