@@ -8,6 +8,7 @@ title: Projects
 Space or near-space technologies provide unique perspectives of our world. Due to the high cost of rockets, many technologies are tested using high altitude balloons, like the one's employed in the Canadian Space Agency's STRATOS program. Our objective was to design and build a separator to detach the balloon from the remainder of the flight train at the end of the flight. This device is planned to be in use in 2022.
 
 <center><img src="/files/capstone.png" alt="title" width = "750"/></center>
+
 <center><video src="/files/FullSizeRender 3.mp4" width="300" height="400" controls preload></video></center>
 
 # Kaggle
