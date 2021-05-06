@@ -3,13 +3,20 @@ layout: default
 title: Projects
 ---
 
+# Capstone: CSA STRATOS balloon separator
+
+Space or near-space technologies provide unique perspectives of our world. Due to the high cost of rockets, many technologies are tested using high altitude balloons, like the one's employed in the Canadian Space Agency's STRATOS program. Our objective was to design and build a separator to detach the balloon from the remainder of the flight train at the end of the flight. This device is planned to be in use in 2022.
+
+<center><img src="/files/capstone.png" alt="title" width = "750"/></center>
+<center><video src="/files/FullSizeRender 3.mp4" width="300" height="400" controls preload></video></center>
+
 # Kaggle
 
 I was first introduced to machine learning (ML) through my first lab experience, where my colleagues were using ML algorithms to detect epilepsy. Since then, my curiosity for the subject has led me to complete several MOOCs on the subject, and begin participating in Kaggle competitions.
 
 **Cassava Leaf Disease Competition**
 
-Currently, I am competing in the Cassava Leaf Disease Competition. The task outlined involves the classification of Casava images into four diseases categories or a fifth healthy plant category. Due to the computationally expensive nature of this task and the limited dataset, tensor processing units (TPUs) and transfer learning were used. At the moment my algorithm has an accuracy of 89.1% (the top accuracy on the leaderboard is 90.6%), though I am hoping to impove this by ensembling and exploring different algorithms. My notebooks containing the associated code can be accessed <a href="https://www.kaggle.com/danielwijaya/cassava-v1">here</a>. 
+I competed in the Cassava Leaf Disease Competition. The task outlined involves the classification of Casava images into four diseases categories or a fifth healthy plant category. Due to the computationally expensive nature of this task and the limited dataset, tensor processing units (TPUs) and transfer learning were used. At the moment my algorithm has an accuracy of 89.1% (the top accuracy on the leaderboard is 90.6%), though I am hoping to impove this by ensembling and exploring different algorithms. My notebooks containing the associated code can be accessed <a href="https://www.kaggle.com/danielwijaya/cassava-v1">here</a>. 
 
 # Probe validation 
 
@@ -23,7 +30,7 @@ Weight matrix for the relationship between activations in the past 1 second in g
 
 # Mechanical Hand
 
-I have taken it on myself to design and build a mechanical hand with the same degrees of freedom as a human hand. Currently, I have completed the majority of the mechanical design, and am now working with a friend to forge my vision into a reality.
+I have taken it on myself to design and build a mechanical hand with the same degrees of freedom as a human hand. I have completed the mechanical design of the component and now I am working with a friend to 3D print the components and integrate the electronics, control scheme and actuators.
 
 <video src="/files/video-1609701668.mp4" width="200" height="400" controls preload></video>
 
