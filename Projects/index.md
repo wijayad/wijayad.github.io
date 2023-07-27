@@ -2,6 +2,15 @@
 layout: default
 title: Projects
 ---
+# Robotic Arm
+
+This is a personal project to create a low-cost robotic arm for testing control systems and path planning workflows. To minimize cost, stepper motors paired with a harmonic gearbox providing a -29:1 gear reduction is used at the base. Additionally, the stepper motor for the second joint acts as a counterweight due to its location on the arm. Currently, I am working on building the first prototype and writing firmware on Arduino.
+
+<center><img src="/files/arm_pic1.png" alt="title" width = "400"/></center>
+
+<video src="/files/base_differential.mp4" width="200" height="400" controls preload></video>
+
+<video src="/files/-29_1_harmonicDrive.mp4" width="200" height="400" controls preload></video>
 
 # Capstone: CSA STRATOS balloon separator
 
