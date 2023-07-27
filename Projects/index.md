@@ -8,7 +8,7 @@ This is a personal project to create a low-cost robotic arm for testing control 
 
 <center><img src="/files/arm_pic1.png" alt="title" width = "400"/></center>
 
-<video src="/files/base_differential.mp4" width="200" height="400" controls preload></video>
+<video src="/files/base_differential.mp4" height="400" controls preload></video>
 
 <video src="/files/-29_1_harmonicDrive.mp4" width="200" height="400" controls preload></video>
 
