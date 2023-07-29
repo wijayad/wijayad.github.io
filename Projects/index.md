@@ -8,11 +8,11 @@ This is a personal project to create a low-cost robotic arm for testing control 
 
 <center><img src="/files/arm_pic1.png" alt="title" width = "400"/></center>
 
-<video src="/files/base_differential_2.mp4" height="300" controls preload></video>
+<video src="/files/base_differential_2.mp4" height="250" controls preload></video>
 
-<video src="/files/base_differential.mp4" height="300" controls preload></video>
+<video src="/files/base_differential.mp4" height="250" controls preload></video>
 
-<video src="/files/-29_1_harmonicDrive.mp4" height="300" controls preload></video>
+<video src="/files/-29_1_harmonicDrive.mp4" height="250" controls preload></video>
 
 # Capstone: CSA STRATOS balloon separator
 
