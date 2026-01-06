@@ -2,6 +2,215 @@
 layout: default
 title: Projects
 ---
+# Origami Cranes
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Material</th>
+      <th>Thickness (mm)</th>
+      <th>Layer (mm)</th>
+      <th>Hinge Design</th>
+      <th>Other</th>
+      <th>Observations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>PLA</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        0.2 mm thickness<br>
+        1 mm wide hinges<br>
+        2.5 mm relief holes at fold intersections<br>
+        Folds assume 0 mm thickness
+      </td>
+      <td></td>
+      <td>
+        Material is brittle. Folds involving multiple layers snap
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>PLA</td>
+      <td>0.3</td>
+      <td>0.1</td>
+      <td>
+        0.2 mm thickness<br>
+        1 mm wide hinges<br>
+        2.5 mm relief holes at fold intersections<br>
+        Folds assume 0 mm thickness
+      </td>
+      <td></td>
+      <td>
+        Material is brittle. Folds involving multiple layers snap but less
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>PLA</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        Cut pattern (similar to compliant wood hinge)<br>
+        2.5 mm relief holes at fold intersections<br>
+        Folds assume 0 mm thickness
+      </td>
+      <td></td>
+      <td>
+        Hinges are compliant but cut pattern results in poor edge aesthetics
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>PLA</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        0.2 mm thinner section<br>
+        1.2–1.8 mm wide hinges<br>
+        2.5 mm relief holes at fold intersections<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td></td>
+      <td>
+        Material is brittle. Folds involving multiple layers snap but later than Test 1.
+        Offsetting hinges results in tighter folds where there are &gt;2 layers
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>PLA</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        0.2 mm thinner section<br>
+        1.2–1.8 mm wide hinges<br>
+        2.5 mm relief holes at fold intersections<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td>Folded in hot water</td>
+      <td>
+        Same as Test 4. Folding in hot water prevents hinges from snapping
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>PETG</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        0.2 mm thinner section<br>
+        1.2–1.8 mm wide hinges<br>
+        2.5 mm relief holes at fold intersections<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td></td>
+      <td>
+        Same geometry as Test 4. PETG is more ductile at room temperature compared to PLA,
+        but hinges still snap
+      </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>PLA</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        0.2 mm thinner section<br>
+        1.2–1.8 mm wide hinges<br>
+        2.5 mm relief holes at fold intersections<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td>
+        Concentric top layers (instead of monotonic)<br>
+        Folded in hot water
+      </td>
+      <td>
+        Different print orientation results in better overhang quality in some regions
+        and worse quality in others
+      </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>PLA</td>
+      <td>0.48</td>
+      <td>0.16</td>
+      <td>
+        0.2 mm thinner section<br>
+        1–1.8 mm wide hinges<br>
+        1.8 mm relief holes at fold intersections (some removed)<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td>Folded in hot water</td>
+      <td>
+        Relief holes are very beneficial, reducing joint rigidity and aiding assembly.
+        Reducing layer height results in worse overhangs for hinges
+      </td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>PLA</td>
+      <td>0.6</td>
+      <td>0.1</td>
+      <td>
+        0.2 mm thinner section<br>
+        1–2 mm wide hinges<br>
+        1.8 mm relief holes at fold intersections<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td>Folded in hot water</td>
+      <td>
+        Reduced layer height did not have significant impact on overhang quality
+      </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>PCL</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        0.2 mm thinner section<br>
+        1–2 mm wide hinges<br>
+        1.8 mm relief holes at fold intersections<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td></td>
+      <td>
+        Folds well at room temperature. Overhangs look ugly but are functional.
+        Iterated for printability; material is prone to jamming
+      </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>PCL</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>
+        0.2 mm thinner section<br>
+        1–2 mm wide hinges<br>
+        1.8 mm relief holes at fold intersections<br>
+        Folds offset to account for material thickness where able
+      </td>
+      <td>
+        Reduced overhang speed by 40%<br>
+        Flipped part in Z so bottom surface is visible after folding
+      </td>
+      <td>
+        Print orientation introduces more overhangs, resulting in worse hinge quality.
+        Still functional but aesthetically worse at hinges
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<img src="/files/craneIterations.png" width="180" style="display: block; max-width: 100%; height: auto;">
+
+# Leviosa
+
 # Robotic Arm
 
 This is a personal project to create a low-cost robotic arm for testing control systems and path planning workflows. To minimize cost, stepper motors paired with a harmonic gearbox providing a -29:1 gear reduction is used at the base. Additionally, the stepper motor for the second joint acts as a counterweight due to its location on the arm. Currently, I am working on building the first prototype and writing firmware on Arduino. I plan to use this project as a platform for learning about control systems, algorithms, and robotics as a whole.
