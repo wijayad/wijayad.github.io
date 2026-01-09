@@ -1,4 +1,5 @@
 name: Daniel Wijaya
+description: An overview of my experience and projects
+
 markdown: kramdown
 theme: jekyll-theme-slate
-description: An overview of my experience and projects
