@@ -1,37 +1,343 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-			<ul>
-				<li><a href="/">HOME</a></li>
-				<!-- <li><a href="/about">About</a></li> -->
-				<li><a href="/files/resume_ongit.pdf">RESUME</a></li>
-				<!-- <li><a href="/blog">Blog</a></li> -->
-			<li><a href="/Projects">PROJECTS</a></li>
-			</ul>
-		</nav>
-		<div class="container">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Wijaya</title>
+	<body> <div id="top"></div></body>
+	<footer>
+		<ul>
+			<li><a href="mailto:leinad.ayajaw@gmail.com" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+				<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+				</svg>
+			</a></li>
+			<li><a href="https://github.com/wijayad" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+					<path d="M9 18c-4.51 2-5-2-7-2"/>
+				</svg>
+			</a></li>
+			<li><a href="https://www.linkedin.com/in/daniel-wijaya" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+					<rect width="4" height="12" x="2" y="9"/>
+					<circle cx="4" cy="4" r="2"/>
+				</svg>
+			</a></li>
+		</ul>
+	</footer>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+		/* Layout for each project row */
+		.project-item {
+		    display: flex;
+		    flex-direction: row; /* Side by side */
+		    gap: 30px;           /* Space between image and text */
+		    margin-bottom: 60px; /* Space between different projects */
+		    align-items: flex-start;
+		}
 		
-		{{ content }}
+		/* Ensure the image/video takes up about 45% of the width */
+		.project-media {
+		    flex: 1;
+		    max-width: 45%;
+		}
 		
-		</div><!-- /.container -->
-		<footer>
-			<ul>
-				<li><a href="mailto:leinad.ayajaw@gmail.com" target="_blank">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-					<rect width="20" height="16" x="2" y="4" rx="2"></rect>
-					<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-					</svg>
-				</a></li>
-			<li><a href="https://github.com/wijayad">github.com/wijayad</a></li>
-				<li><a href="www.linkedin.com/in/daniel-wijaya">www.linkedin.com/in/daniel-wijaya</a></li>
-			</ul>
-		</footer>
-	</body>
+		/* The text description takes the rest */
+		.project-info {
+		    flex: 1.2;
+		}
+		
+		/* RESPONSIVE DESIGN: Stack vertically on small screens (Phones) */
+		@media (max-width: 768px) {
+		    .project-item {
+		        flex-direction: column;
+		    }
+		    .project-media {
+		        max-width: 100%;
+		    }
+		}
+
+		/* Container for the side-by-side videos */
+		.video-row {
+		    display: flex;
+		    flex-direction: row;
+		    gap: 15px; /* Space between the videos */
+		    justify-content: center;
+		    width: 100%;
+		}
+		
+		/* Styles for the rotated videos inside the row */
+		.video-row .vertical-video {
+		    transform: rotate(90deg);
+		    
+		    /* LIMIT THE HEIGHT so they don't break the layout */
+		    max-height: 250px; 
+		    
+		    /* Width auto ensures they scale proportionally */
+		    width: auto; 
+		    
+		    border-radius: 8px;
+		    object-fit: cover;
+		}
+		
+		/* RESPONSIVE: Stack them on mobile */
+		@media (max-width: 768px) {
+		    .video-row {
+		        flex-direction: column;
+		        align-items: center;
+		    }
+		    .video-row .vertical-video {
+		        transform: rotate(0deg); /* Un-rotate on mobile if desired */
+		        max-height: none;
+		        width: 100%;
+		    }
+		}
+		
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#workExperience">WORK EXPERIENCE</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- HOME -->
+    <section id="home">
+        <h1>Daniel Wijaya</h1>
+        <p>Some of my Engineering projects and experience.</p>
+    </section>
+    <!-- RESUME -->
+    <section id="workExperience">
+        <h2>Work Experience</h2>
+		<a href="#top" class="back-to-top">↑ Back to top</a>
+		<ul>
+			<li>2026 - Present ▸ Sr. Reliability Engineering Specialist | <a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></li>
+			<li>2024 - 2025 ▸ Reliability Engineering Specialist | <a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></li>
+			<li>2023 - 2024 ▸ Applications Engineering Specialist | <a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></li>
+			<li>2021 - 2023 ▸ Mechanical Engineering Designer | <a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></li>
+			<li>2020 - 2021 ▸ Research Assistant | Center of Human Development and Disability, UW</li>
+			<li>2019 - 2020 ▸ Commodity Management Associate Internship | Celestica</li>
+			<li>2017, 2018 ▸ Research Intern | Behavioral and Cognitive Neuroscience Institute, SFU</li>
+		</ul>
+        <p>
+            <a href="/files/Resume.pdf" target="_blank">
+                Download Resume (PDF)
+            </a>
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+	<section id="projects">
+	    <h2>Projects</h2>
+		Some of the projects that I've worked on. <br>
+	    <a href="#top" class="back-to-top">↑ Back to top</a>
+
+		<h3> Personal Project: Leviosa </h3>
+	    <div class="project-item">
+	        <div class="project-media">
+	            <video width="100%" controls style="border-radius: 8px;">
+	                <source src="/files/leviosa_1.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	            <img src="/files/leviosaPic.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Create a floating pen <br>
+					<strong>Outcomes:</strong> Created platform to float pen using passive magnets & electromagnets. Currently refining PCB and system capabilities. <br>
+					<strong>Skills used:</strong> Python (physics simulation, monte carlo), RCA, Oscilloscope, DMM, KiCAD, OnShape, Additive Manufacturing <br>
+					<a href="https://github.com/Kay-Jack/Leviosa" target="_blank" rel="noopener noreferrer">Project Github</a>
+				</p>
+	        </div>
+	    </div>
+
+		<h3> Personal Project: 3DP Origami </h3>
+	    <div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/origamiPic.jpg" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Creation of 3DP origami with consideration for non-zero thickness folds. <br>
+					<strong>Outcomes:</strong> Creation of patterns and parameterized folds to create a limited set of origami. <br>
+					<strong>Skills used:</strong> OnShape, Additive Manufacturing <br>
+					<a href="https://cad.onshape.com/documents/48f0188c96adc5b0081f91ed/w/40a91fe78db05c546f068acc/e/4b895ad3a43caa62daad5b15" target="_blank" rel="noopener noreferrer">OnShape File</a>
+				</p>
+	        </div>
+	    </div>
+	
+		<h3> Personal Project: Robotic Arm </h3>
+	    <div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/robotArmPic.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	            <video width="100%" controls style="border-radius: 8px;">
+	                <source src="/files/base_differential_3.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Personal project to create a low-cost robotic arm for testing control systems and path planning workflows <br>
+					<strong>Outcomes:</strong> Iteration 1 created and failure points identified. Iteration 2 CAD and build in-progress. <br>
+					<strong>Skills used:</strong> OnShape & SolidWorks (CAD, motion planning), Arduino, DMM <br>
+					<a href="https://github.com/wijayad/robotArm" target="_blank" rel="noopener noreferrer">Project Github</a>
+				</p>
+	        </div>
+	    </div>
+
+		<h3> Personal Project: Kaggle Cassava Leaf Disease Competition </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	        	<img src="/files/CassavaLeafPic.jpg" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> classification of Cassava images into four diseases categories or a fifth healthy plant category. Tensor processing units (TPUs) and transfer learning were used.  <br>
+					<strong>Outcomes:</strong> algorithm achieved 89.1% accuracy <br>
+					<strong>Skills used:</strong> Python <br>
+					<a href="https://www.kaggle.com/danielwijaya/cassava-v1" target="_blank" rel="noopener noreferrer">Kaggle Notebook</a>
+				</p>
+	        </div>
+	    </div>
+
+		<h3> Capstone: CSA STRATOS balloon separator </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/capstonePic.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	            <video width="100%" controls style="border-radius: 8px;">
+	                <source src="/files/FullSizeRender 3.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Design and build a separator to detach the balloon from the payload per signal input or when the balloon bursts. <br>
+					<strong>Outcomes:</strong> Goals fulfilled. <br>
+					<strong>Skills used:</strong> SolidWorks (CAD & FEA), Arduino, DMM
+				</p>
+	        </div>
+	    </div>
+		
+		<h3> Neural Probe Testing </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/neuralProbePic.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Pre-process provided neural data, detect and sort neural spikes, determine spike correlation between sensors, and mapping relationships between the granular and molecular layers of the brain. <br>
+					<strong>Outcomes:</strong> Scripts created to achieve goals above. <br>
+					<strong>Skills used:</strong> Python (signal processing and analysis)
+				</p>
+	        </div>
+	    </div>
+
+		<h3> Personal Project: Mechanical Hand </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/handProjectPic.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+				<div class="video-row">
+		            <video width="100%" controls style="border-radius: 8px;">
+		                <source src="/files/video-1609701668.mp4" type="video/mp4">
+		                Your browser does not support the video tag.
+		            </video>
+		            <video width="100%" controls style="border-radius: 8px;">
+		                <source src="/files/video-1609961594.mp4" type="video/mp4">
+		                Your browser does not support the video tag.
+		            </video>
+				</div>
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Personal self-directed project to create a mechanical human hand analog using servos. <br>
+					<strong>Outcomes:</strong> CAD & Arduino code completed, Finger Subassemblies manufactured and assembled. <br>
+					<strong>Skills used:</strong> SolidWorks, Arduino, Additive Manufacturing
+				</p>
+	        </div>
+	    </div>
+
+		
+		<h3> Design Team: AERO McGill </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/AEROpic.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Design a remote controlled aircraft for the SAE Aero Design competition. <br>
+					<strong>Outcomes:</strong> Participation in SAE competitions. Fulfilled roles as sub-team lead, VP logistics, and co-captain over 3 years. <br>
+					<strong>Skills used:</strong> SolidWorks, CFD, Lasercutter, Additive Manufacturing, 
+				</p>
+	        </div>
+	    </div>
+		
+		<h3> Internship Project: Optically Pumped Magnetometer (OPM) “Helmet” System </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/OPM_compare.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	            <img src="/files/custom_array.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	            <img src="/files/active_mag_shield.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Develop rig maximizing signal to noise ratio (SNR). Validate system. <br>
+					<strong>Outcomes:</strong> Rig designed and workflow created to automatically generate patient-specific sensor arrays. System validated using a magnetic dipole. Investigated use of coils for active shielding. <br>
+					<strong>Skills used:</strong> Python, SolidWorks, VBA <br>
+					<a href="https://wijayad.github.io/files/OHBM_2018_Daniel_Wijaya.pdf" target="_blank" rel="noopener noreferrer">2018 OHBM Poster</a>
+				</p>
+	        </div>
+	    </div>
+		
+		<h3> Internship Project: Cervical Spine Co-registration Jig </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/co_registration.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> Develop workflow to enable co-registration of Magnetoencephalography (MEG) Optically Pumped Magnetometer (OPM) (has high temporal resolution) with MRI (has high spatial resolution) <br>
+					<strong>Outcomes:</strong> Rig designed and workflow created to automatically generate patient-specific sensor arrays. System validated using a magnetic dipole. Investigated use of coils for active shielding <br>
+					<strong>Skills used:</strong> Python, SolidWorks, VBA <br>
+				</p>
+	        </div>
+	    </div>
+		
+		<h3> Internship Project: Cervical Spine Co-registration Jig </h3>
+		<div class="project-item">
+	        <div class="project-media">
+	            <img src="/files/head_stabilzer.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            <p>
+					<strong>Goal:</strong> secure young patients who may have a history of seizure, a headrest component needed to be designed for the CTF MEG. <br> 
+					<strong>Outcomes:</strong> Rig printed by U of T lab affiliated with Sick Kids for use.  <br>
+					<strong>Skills used:</strong> SolidWorks (CAD & FEA)
+				</p>
+	        </div>
+	    </div>
+
+	</section>
+	
+	<a href="#top" class="back-to-top">↑ Back to top</a>
+</div>
+
+</body>
 </html>
