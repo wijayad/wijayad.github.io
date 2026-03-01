@@ -38,6 +38,37 @@
         section {
             padding: 100px 0;
         }
+
+		/* Layout for each project row */
+		.project-item {
+		    display: flex;
+		    flex-direction: row; /* Side by side */
+		    gap: 30px;           /* Space between image and text */
+		    margin-bottom: 60px; /* Space between different projects */
+		    align-items: flex-start;
+		}
+		
+		/* Ensure the image/video takes up about 45% of the width */
+		.project-media {
+		    flex: 1;
+		    max-width: 45%;
+		}
+		
+		/* The text description takes the rest */
+		.project-info {
+		    flex: 1.2;
+		}
+		
+		/* RESPONSIVE DESIGN: Stack vertically on small screens (Phones) */
+		@media (max-width: 768px) {
+		    .project-item {
+		        flex-direction: column;
+		    }
+		    .project-media {
+		        max-width: 100%;
+		    }
+		}
+		
     </style>
 </head>
 <body>
@@ -78,11 +109,34 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
-		<a href="#top" class="back-to-top">↑ Back to top</a>
-        <p>Add your project summaries here.</p>
-    </section>
+	<section id="projects">
+	    <h2>Projects</h2>
+	    <a href="#top" class="back-to-top">↑ Back to top</a>
+	
+	    <div class="project-item">
+	        <div class="project-media">
+	            <img src="your-image-url.jpg" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
+	        </div>
+	        <div class="project-info">
+	            ### Project Title
+	            <p>A brief description of what you built. Mention the tech stack and the problem you solved. This text will sit nicely to the right of your media on desktops.</p>
+	            <a href="#" class="project-link">View GitHub</a>
+	        </div>
+	    </div>
+	
+	    <div class="project-item">
+	        <div class="project-media">
+	            <video width="100%" controls style="border-radius: 8px;">
+	                <source src="your-video.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <div class="project-info">
+	            ### Another Project
+	            <p>Details about your second project go here. This layout keeps things organized and visually balanced.</p>
+	        </div>
+	    </div>
+	</section>
 
 
 </div>
