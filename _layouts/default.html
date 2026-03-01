@@ -68,6 +68,42 @@
 		        max-width: 100%;
 		    }
 		}
+
+		/* Container for the side-by-side videos */
+		.video-row {
+		    display: flex;
+		    flex-direction: row;
+		    gap: 15px; /* Space between the videos */
+		    justify-content: center;
+		    width: 100%;
+		}
+		
+		/* Styles for the rotated videos inside the row */
+		.video-row .vertical-video {
+		    transform: rotate(90deg);
+		    
+		    /* LIMIT THE HEIGHT so they don't break the layout */
+		    max-height: 250px; 
+		    
+		    /* Width auto ensures they scale proportionally */
+		    width: auto; 
+		    
+		    border-radius: 8px;
+		    object-fit: cover;
+		}
+		
+		/* RESPONSIVE: Stack them on mobile */
+		@media (max-width: 768px) {
+		    .video-row {
+		        flex-direction: column;
+		        align-items: center;
+		    }
+		    .video-row .vertical-video {
+		        transform: rotate(0deg); /* Un-rotate on mobile if desired */
+		        max-height: none;
+		        width: 100%;
+		    }
+		}
 		
     </style>
 </head>
@@ -219,14 +255,16 @@
 	        <div class="project-media">
 	            <img src="/files/handProjectPic.png" alt="Project Screenshot" style="width:100%; border-radius: 8px;">
 	        </div>
-			<video width="100%" controls style="transform: rotate(270deg); border-radius: 8px;">
+			<div class="video-row">
+	            <video controls class="vertical-video">
 	                <source src="/files/video-1609701668.mp4" type="video/mp4">
 	                Your browser does not support the video tag.
-	            </video> <br>
-			<video width="100%" controls style="transform: rotate(270deg); border-radius: 8px;">
+	            </video>
+	            <video controls class="vertical-video">
 	                <source src="/files/video-1609961594.mp4" type="video/mp4">
 	                Your browser does not support the video tag.
 	            </video>
+	        </div>
 	        <div class="project-info">
 	            <p>
 					<strong>Goal:</strong> Personal self-directed project to create a mechanical human hand analog using servos. <br>
